@@ -4,10 +4,11 @@
  * Author: Alvin Lin (alvin.lin.dev@gmail.com)
  */
 
-@font-face {
-  font-family: Hacked;
-  src: url('/static/fonts/Hacked.ttf');
-}
+// [jwc]+x Replace 'Hacked' with Standard Font
+//  @font-face {
+//   // font-family: Hacked;
+//   src: url('/static/fonts/Hacked.ttf');
+// }
 
 html, body {
   width: 100%;
@@ -93,16 +94,18 @@ html, body {
 
     h1 {
       font-size: 80px;
-      font-family: Hacked, sans-serif;
+      font-family: "Arial Black", Gadget, sans-serif;
       margin: 0;
       padding: 0;
     }
 
     h2 {
-      font-size: 16px;
-      padding-left: 100px;
-      color: #FF0000;
-      font-family: Hacked, sans-serif;
+      font-size: 20px;
+      // padding-left: 100px;
+      font-family: "Arial Black", Gadget, sans-serif;
+      // [jwc]+2 override default:
+      -webkit-margin-before: 0em;
+      -webkit-margin-after: 0em;
     }
   }
 
